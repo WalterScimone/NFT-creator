@@ -1,0 +1,22 @@
+{
+  "name": "nft-creator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "createToken.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WalterScimone/NFT-creator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WalterScimone/NFT-creator/issues"
+  },
+  "homepage": "https://github.com/WalterScimone/NFT-creator#readme",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.0.30"
+  }
+}
