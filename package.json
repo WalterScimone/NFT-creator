@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/WalterScimone/NFT-creator#readme",
   "dependencies": {
-    "@hashgraph/sdk": "^2.0.30"
+    "@hashgraph/sdk": "^2.0.30",
+    "dotenv": "^10.0.0"
   }
 }
