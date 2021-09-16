@@ -23,14 +23,14 @@ async function main() {
 
   //Set parameters to create token...
   let createTokenTx = await new TokenCreateTransaction()
-    .setTokenName("JAGABOOKennels")
-    .setTokenSymbol("JAGABOO")
+    .setTokenName("Test")
+    .setTokenSymbol("TTT")
     .setDecimals(0)
     .setInitialSupply(0)
     .setSupplyKey(privateKey)
     .setTokenType(TokenType.NonFungibleUnique)
     .setSupplyType(TokenSupplyType.Finite)
-    .setMaxSupply(1000)
+    .setMaxSupply(1)
     .setTreasuryAccountId(accountId)
     .execute(client);
 
