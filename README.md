@@ -59,7 +59,8 @@ TOKEN_ID=0.0.XXXXXXX
 ```
 <h2 id="mint-token">Mint Token</h2>
 
-<p>Go to ProvenDB, upload document to the compliance vault, copy the url from the button "share via URL"</p>
+<p>Go to ProvenDB, upload document to the compliance vault, copy the url from the button "share via URL".</br>
+Open the file mintToken.js and replace the NFTlink URL with yours...</p>
 
 ```sh
 // Now link the NFT by connecting the PROVENDB file...
