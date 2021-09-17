@@ -14,8 +14,8 @@
 <h2 id="installation">Installation</h2>
 
 
-<p>As prerequisite to run the application, a ProvenDB account is  required, as it will be used as the Blockchain database to store the NFT metadata. Register at <a href=" https://www.provendb.com/">ProvenDB</a> </p>.</br> 
-Secondly, you must create a .env file with ACCOUNT_ID and PRIVATE_KEY from a Hedera Testnet account. Register at a href=" https://portal.hedera.com/register">Hedera Testnet</a> .</p>
+<p>As prerequisite to run the application, a ProvenDB account is  required, as it will be used as the Blockchain database to store the NFT metadata. Register at https://www.provendb.com/.</br> 
+Secondly, you must create a .env file with ACCOUNT_ID and PRIVATE_KEY from a Hedera Testnet account. Register  at https://portal.hedera.com/register.</p>
 
 ```sh
 ACCOUNT_ID=0.0.XXXXX
@@ -70,4 +70,4 @@ TOKEN_ID=0.0.XXXXXXX
 node mintToken
 ```
 <p>You should now have the metadata info in the terminal and this token associated with the file from the URL.</br>
-To verify the authenticity of the transaction, please visit <a href="https://testnet.dragonglass.me">Dragonglass block explorer</a> </p>
+To verify the authenticity of the transaction, please visit https://testnet.dragonglass.me</p>
