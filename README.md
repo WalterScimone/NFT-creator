@@ -7,13 +7,15 @@
 <h2>Table of Contents<h2>
 
 * [Installation](#installation)
+* [Create Token](#create-token)
+* [Mint Token](#mint-token)
 
 
 <h2 id="installation">Installation</h2>
 
 
-<p>As prerequisite to run the application, a ProvenDB account is  required, as it will be used as the Blockchain database to store the NFT metadata. Register at https://www.provendb.com/.</br> 
-Secondly, you must create a .env file with ACCOUNT_ID and PRIVATE_KEY from a Hedera Testnet account. Register at https://portal.hedera.com/register.</p>
+<p>As prerequisite to run the application, a ProvenDB account is  required, as it will be used as the Blockchain database to store the NFT metadata. Register at <a href=" https://www.provendb.com/">ProvenDB</a> </p>.</br> 
+Secondly, you must create a .env file with ACCOUNT_ID and PRIVATE_KEY from a Hedera Testnet account. Register at a href=" https://portal.hedera.com/register">Hedera Testnet</a> .</p>
 
 ```sh
 ACCOUNT_ID=0.0.XXXXX
@@ -25,6 +27,8 @@ PRIVATE_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```sh
 npm install
 ```
+
+<h2 id="create-token">Create Token</h2>
 
 <p>Open createToken.js, modify token parameteres at your pleasure...</p>
 
@@ -42,3 +46,28 @@ npm install
     .setTreasuryAccountId(accountId)
     .execute(client);
 ```
+
+```sh
+node createToken
+```
+<p>After running the command, you should get the token ID in the terminal. Add "0.0." to that number and place it inside the .env file</p>
+
+```sh
+ACCOUNT_ID=0.0.XXXXXXX
+PRIVATE_KEY=XXXXXXX
+TOKEN_ID=0.0.XXXXXXX
+```
+<h2 id="mint-token">Mint Token</h2>
+
+<p>Go to ProvenDB, upload document to the compliance vault, copy the url from the button "share via URL"</p>
+
+```sh
+// Now link the NFT by connecting the PROVENDB file...
+  const NFTlink = "https://tinyurl.com/4rm89uuk"; <--- change this
+```
+
+```sh
+node mintToken
+```
+<p>You should now have the metadata info in the terminal and this token associated with the file from the URL.</br>
+To verify the authenticity of the transaction, please visit <a href="https://testnet.dragonglass.me">Dragonglass block explorer</a> </p>
