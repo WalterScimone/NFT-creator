@@ -7,14 +7,6 @@
 <h2>Table of Contents<h2>
 
 * [Installation](#installation)
-* [Sign Up](#signup)
-* [Login](#login)
-* [Saved Books](#saved-books)
-* [Built With](#built)
-* [Future Updates](#future)
-* [Author](#author)
-* [Contributions](#contribute)
-* [Give Support](#Support)
 
 
 <h2 id="installation">Installation</h2>
